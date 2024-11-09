@@ -7,9 +7,7 @@ import time
 import re
 
 def setup_driver():
-    options = webdriver.EdgeOptions()
-    options.add_argument('--start-maximized')
-    driver = webdriver.Edge(options=options)
+    driver = webdriver.Edge()
     driver.get('https://www.google.com')
     return driver
 
